@@ -7,11 +7,21 @@
 
 /*
  * Scaffolding
- * -------------------------------------------------------------------------- */
+ * --------/*
 
-$body-bg: #f7f7f7;
-$text-color: #333;
-$brand-color: #21ce99;
+* Colors
+*/
+
+$navy-color: #020733;
+$faded-blue-color: #454B66;
+$teal-color: #27CCC0;
+$faded-teal-color: #BDFAF6;
+$off-white-color: #F7FFFB;
+
+
+$body-bg: #FFFFFF;
+$text-color: $navy-color;
+$brand-color: $teal-color;
 
 /*
  * Typography
@@ -26,3 +36,5 @@ $font-family-base: 'Poppins', 'Helvetica', sans-serif;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
+
+
