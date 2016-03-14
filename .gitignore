@@ -5,7 +5,9 @@ build
 node_modules
 npm-debug.log
 
-# Webstorm 
+photographs
+
+# Webstorm
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
