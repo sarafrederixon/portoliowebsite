@@ -8,8 +8,8 @@ var Landing = React.createClass({
       return <div className="Landing-Content">
         <h1 className="Landing-Header">Sara Frederixon</h1>
         <div className="Landing-Buttons">
-          <Button value="Photographer" link="/about"/>
-          <Button value="Developer" link="/blog"/>
+          <Button value="Photographer"/>
+          <Button value="Developer"/>
         </div>
       </div>
   }
