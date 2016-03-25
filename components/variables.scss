@@ -3,7 +3,7 @@
  * https://github.com/koistya/react-static-boilerplate
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300);
 
 /*
  * Scaffolding
@@ -18,9 +18,14 @@ $teal-color: #27CCC0;
 $faded-teal-color: #BDFAF6;
 $off-white-color: #F7FFFB;
 
+$button-hover-teal: #28ece0;
+
 $body-bg: #FFFFFF;
 $text-color: $navy-color;
 $brand-color: $teal-color;
+
+$font-weight-regular: 400;
+$font-weight-light: 300;
 
 /*
  * Typography
@@ -32,6 +37,7 @@ $font-family-base: 'Poppins', 'Helvetica', sans-serif;
  * Media queries breakpoints
  * -------------------------------------------------------------------------- */
 
+$screen-xs-min: 500px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;

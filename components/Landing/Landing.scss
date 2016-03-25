@@ -21,24 +21,54 @@ html, body {
 .Landing-Content {
   padding-left: 10%;
   position:fixed;
-  width:100%;
   bottom: 12%;
 
+  text-align: center;
 }
 
 .Landing-Header {
   font-size: 60pt;
   letter-spacing: 5px;
-  font-weight: normal;
+  font-weight: $font-weight-regular;
+}
+
+.Landing-Buttons {
+  margin: 0 auto;
+}
+
+.Landing-Buttons > .Button {
+  margin: 0 35px;
 }
 
 @media (max-width: $screen-sm-min) {
   .Landing-Header {
     font-size: 9vw;
+    letter-spacing: 4px;
   }
 
   .Landing-Content {
     padding-left: 4%;
+  }
+
+  .Landing-Buttons > .Button {
+    width: 40%;
+    max-width: 180px;
+    font-size: 13pt;
+    margin: 0 5%;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .Landing-Content {
+    padding-left: 2%;
+  }
+
+  .Landing-Buttons > .Button {
+    width: 40%;
+    font-size: 3.5vw;
+    margin: 0 2%;
+    padding: 8px 0;
   }
 }
 

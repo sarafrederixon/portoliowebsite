@@ -3,7 +3,7 @@ import './Button.scss';
 
 var Button = React.createClass({
   render: function() {
-    return <a href={this.props.link}>
+    return <a className="Button" href={this.props.link}>
       <span>{this.props.value}</span>
     </a>
   }
