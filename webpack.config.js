@@ -23,9 +23,13 @@ module.exports = {
       {
         test: /\.scss$/,
         include: /src/,
-         loader: ExtractTextPlugin.extract(
-            "style",
-            "css!sass")
+        loaders: [
+          'style',
+          'css',
+          'autoprefixer?browsers=last 3 versions',
+          'sass?outputStyle=expanded'//,
+          // ExtractTextPlugin.extract("style", "css!sass")
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -52,3 +56,4 @@ module.exports = {
     new ExtractTextPlugin("[name].css")
   ]
 }
+//TODO: package.json needs extract text plugin
