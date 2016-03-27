@@ -1,17 +1,17 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
 html, body {
   margin: 0;
   padding: 0;
   background-color: $body-bg;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: $font-family-base;
 
   background: linear-gradient(
       rgba(61, 66,90, 0.78),
       rgba(61, 66,90, 0.78)
     ),
-    url("../../photographs/FushimiInariLight.jpg") no-repeat center center fixed;
+    url("../../../photographs/FushimiInariLight.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
