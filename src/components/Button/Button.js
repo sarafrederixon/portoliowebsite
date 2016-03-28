@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+//import './Button.scss';
 
 var Button = React.createClass({
   render: function() {
