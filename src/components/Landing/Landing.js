@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button';
-import './Landing.scss';
+require('./landing.scss');
 
 var Landing = React.createClass({
 

@@ -1,5 +1,3 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 module.exports = {
   context:  __dirname + "/src",
   entry: {
@@ -8,7 +6,7 @@ module.exports = {
   },
   output: {
     filename: "app.js",
-    path: __dirname + "/dist"
+    path: __dirname + "/build"
   },
   devtool: 'eval',
   module: {
@@ -26,10 +24,12 @@ module.exports = {
         loaders: [
           'style',
           'css',
-          'autoprefixer?browsers=last 3 versions',
-          'sass?outputStyle=expanded'//,
-          // ExtractTextPlugin.extract("style", "css!sass")
+          'sass'
         ]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -51,9 +51,6 @@ module.exports = {
         loader: "file?name=[name].[ext]"
       }
     ]
-  },
-  plugins: [
-    new ExtractTextPlugin("[name].css")
-  ]
+  }
 }
 //TODO: package.json needs extract text plugin
