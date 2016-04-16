@@ -1,6 +1,9 @@
 var webpack = require('webpack');
 var path = require('path');
 
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+
 const merge = require('webpack-merge');
 
 
@@ -82,5 +85,26 @@ if(TARGET === 'start' || !TARGET) {
 }
 
 if(TARGET === 'build') {
-  module.exports = merge(config, {});
+  module.exports = merge(config, {
+    plugins: [
+      new CleanWebpackPlugin([BUILD_DIR]),
+
+      // Setting DefinePlugin affects React library size!
+      // DefinePlugin replaces content "as is" so we need some
+      // extra quotes for the generated code to make sense
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': '"production"'
+
+        // You can set this to '"development"' or
+        // JSON.stringify('development') for your
+        // development target to force NODE_ENV to development mode
+        // no matter what
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false
+        }
+      })
+    ]
+  });
 }
