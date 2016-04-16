@@ -16,9 +16,18 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:100%;
-  width:100%;
-  position:fixed;
+  position: fixed;
+  width: 100%;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
 }
 
 .Landing-Content {
