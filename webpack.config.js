@@ -19,6 +19,7 @@ const PATHS = {
 
 var config = {
    entry: {
+     app: path.join(PATHS.app, 'app.js'),
      home: path.join(PATHS.app, 'home.js'),
      photography: path.join(PATHS.app, 'photography.js')
    },
@@ -51,7 +52,7 @@ var config = {
     title: 'Sara Frederixon',
     template: './src/my-index.ejs', // Load a custom template
     inject: 'body', // Inject all scripts into the body
-    chunks: ['home']
+    chunks: ['app']
 
   })
 ]
