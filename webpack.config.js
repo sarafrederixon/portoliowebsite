@@ -19,9 +19,7 @@ const PATHS = {
 
 var config = {
    entry: {
-     app: path.join(PATHS.app, 'app.js'),
-     home: path.join(PATHS.app, 'home.js'),
-     photography: path.join(PATHS.app, 'photography.js')
+     app: path.join(PATHS.app, 'app.js')
    },
    output: {
      path: PATHS.build,

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 import Landing from './components/Landing';
-import Photography from 'photography';
+import Photography from './components/Photography';
 
 ReactDOM.render((
   <Router history={browserHistory}>
