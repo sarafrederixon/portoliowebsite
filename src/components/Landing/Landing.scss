@@ -1,31 +1,5 @@
 @import '../../variables.scss';
 
-html, body {
-  //margin: 0;
-  //padding: 0;
-  //
-  //height: 100%;
-  //overflow: hidden;
-  //-webkit-text-size-adjust: 100%;
-  //
-  //color: #ffffff;
-  //font-family: $font-family-base;
-  //
-  //background: linear-gradient(
-  //    rgba(61, 66,90, 0.78),
-  //    rgba(61, 66,90, 0.78)
-  //),
-  //url("../../../photographs/FushimiInariLight.jpg") no-repeat center center fixed;
-  //-webkit-background-size: cover;
-  //-moz-background-size: cover;
-  //-o-background-size: cover;
-  //background-size: cover;
-  //position: fixed;
-  //width: 100%;
-  //
-  //background-color: $faded-blue-color;
-}
-
 .Landing-Content {
   padding-left: 10%;
   position:fixed;
@@ -63,7 +37,7 @@ html, body {
     max-width: 180px;
     font-size: 13pt;
     margin: 0 5%;
-    padding: 8px 0;
+    padding: 12px 0;
   }
 }
 

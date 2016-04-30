@@ -5,6 +5,8 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import Landing from './components/Landing';
 import Photography from './components/Photography';
 
+require("./main.scss");
+
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={Landing} />

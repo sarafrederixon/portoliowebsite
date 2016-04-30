@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+
 require("./Landing.scss");
 
 var styles = {
@@ -11,7 +12,6 @@ var styles = {
     overflow: 'hidden',
     WebkitTextSizeAdjust: 100,
     color: 'white',
- //   fontFamily: 'Poppins', 'Helvetica', sansSerif,
     backgroundImage: 'url('+'../../../photographs/FushimiInariLight.jpg'+')',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: "center center",
@@ -55,8 +55,8 @@ var Landing = React.createClass({
       return <div className="Landing-Content">
         <h1 className="Landing-Header">Sara Frederixon</h1>
         <div className="Landing-Buttons">
-          <Button value="Photographer"/>
-          <Button value="Developer"/>
+          <Button value="Photographer" link="photography"/>
+          <Button value="Developer" link="photography"/>
         </div>
       </div>
   }
