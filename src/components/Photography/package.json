@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "Photography",
+  "main": "./Photography.js"
+}
