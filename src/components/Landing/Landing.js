@@ -2,7 +2,7 @@
 //import Button from '../Button';
 
 var React = require('react');
-//var Button = require('../Button');
+import Button from '../Button';
 
 require("./Landing.scss");
 var BackgroundImage = require("../../../photographs/FushimiInariLight.jpg");
@@ -55,13 +55,12 @@ var Landing = React.createClass({
         document.body.style[i] = null;
       };
     },
-//<Button value="Photographer" link="photography"/>
-//<Button value="Developer" link="photography"/>
   render: function() {
       return <div className="Landing-Content">
         <h1 className="Landing-Header">Sara Frederixon</h1>
         <div className="Landing-Buttons">
-
+          <Button value="Photographer" link="photography"/>
+          <Button value="Developer" link="photography"/>
         </div>
       </div>
   }

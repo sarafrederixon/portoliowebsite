@@ -4,7 +4,7 @@ import Button from '../Button';
 
 const Photography = React.createClass({
   render: function() {
-    return <Button value="Photographer" link="photography"/>
+    return <Button value="Back" link="/"/>
   }
 });
 

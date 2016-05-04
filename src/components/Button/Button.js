@@ -1,16 +1,15 @@
 var React = require('react');
 
-//var Router = require('react-router');
-//var Link = Router.Link;
-//<Link className="Button" to={this.props.link}>
+var Router = require('react-router');
+var Link = Router.Link;
 
 require("./Button.scss");
 
 var Button = React.createClass({
   render: function() {
-    return <a className="Button">
+    return <Link className="Button" to={this.props.link}>
       <span>{this.props.value}</span>
-    </a>
+    </Link>
   }
 });
 
