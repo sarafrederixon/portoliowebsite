@@ -1,10 +1,12 @@
-import React from 'react';
+var React = require('react');
 
-import Button from '../Button';
+import Navigation from '../Navigation';
 
 const Photography = React.createClass({
   render: function() {
-    return <Button value="Back" link="/"/>
+    return <div>
+      <Navigation />
+    </div>
   }
 });
 
