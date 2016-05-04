@@ -1,7 +1,11 @@
-import React from 'react';
-import Button from '../Button';
+//import React from 'react';
+//import Button from '../Button';
+
+var React = require('react');
+//var Button = require('../Button');
 
 require("./Landing.scss");
+var BackgroundImage = require("../../../photographs/FushimiInariLight.jpg");
 
 var styles = {
   html: {
@@ -12,7 +16,7 @@ var styles = {
     overflow: 'hidden',
     WebkitTextSizeAdjust: 100,
     color: 'white',
-    backgroundImage: 'url('+'../../../photographs/FushimiInariLight.jpg'+')',
+    backgroundImage: 'url('+ BackgroundImage +')',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: "center center",
 
@@ -51,12 +55,13 @@ var Landing = React.createClass({
         document.body.style[i] = null;
       };
     },
+//<Button value="Photographer" link="photography"/>
+//<Button value="Developer" link="photography"/>
   render: function() {
       return <div className="Landing-Content">
         <h1 className="Landing-Header">Sara Frederixon</h1>
         <div className="Landing-Buttons">
-          <Button value="Photographer" link="photography"/>
-          <Button value="Developer" link="photography"/>
+
         </div>
       </div>
   }

@@ -7,8 +7,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const merge = require('webpack-merge');
 
-
-
 // Detect how npm is run and branch based on that
 const TARGET = process.env.npm_lifecycle_event;
 
@@ -23,7 +21,7 @@ var config = {
    },
    output: {
      path: PATHS.build,
-     filename: '[name].js'
+     filename: 'app.js'
    },
    module : {
       loaders : [
