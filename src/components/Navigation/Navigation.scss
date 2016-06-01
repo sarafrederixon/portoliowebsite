@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.Nav-Header {
+  color: $faded-blue-color;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin: 15px 0 4px 0;
+}
+
+.Link-Div {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.Link {
+  color: $teal-color;
+  margin: 0 17px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.Link:hover {
+  color: $faded-teal-color;
+}
+
+.Link.active {
+  color: $faded-blue-color;
+}
+
+.hr-Div {
+  //margin: 0 auto;
+  //width: 60%;
+}
+
+hr {
+  background: $faded-blue-color;
+  align: center;
+  width: 55%;
+  border: none;
+  height: 1px;
+}

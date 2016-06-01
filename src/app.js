@@ -18,7 +18,6 @@ const App = React.createClass({
   }
 })
 
-
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>

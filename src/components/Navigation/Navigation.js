@@ -7,13 +7,22 @@ var Navigation = React.createClass({
   render: function() {
     return <div>
       <h1 className="Nav-Header">Sara Frederixon</h1>
-      <div>
-        <Link to="/">
+      <div className="Link-Div">
+        <Link className="Link" to="/">
           <span>Home</span>
         </Link>
-        <Link to="photography">
+        <Link className="Link" to="photography" activeClassName="active">
           <span>Photography</span>
         </Link>
+        <Link className="Link" to="projects" activeClassName="active">
+          <span>Projects</span>
+        </Link>
+        <Link className="Link" to="about" activeClassName="active">
+          <span>About</span>
+        </Link>
+      </div>
+      <div className="hr-Div">
+        <hr />
       </div>
     </div>
   }
