@@ -4,13 +4,15 @@ var React = require('react');
 var Link = require('react-router').Link;
 
 var Navigation = React.createClass({
+  toggleDropdown: function() {
+    document.getElementsByClassName("ul-Nav")[0].classList.toggle("responsive");
+  },
+
   render: function() {
     return <div>
       <h1 className="Nav-Header">Sara Frederixon</h1>
       <div className="Link-Div">
-        <label for="show-menu" className="show-menu">Show Menu</label>
-        <input type="checkbox" id="show-menu" role="button"/>
-          <ul id="menu">
+          <ul className="ul-Nav">
 
           <li> <Link className="Link" to="/">
             <span>Home</span>
@@ -27,6 +29,10 @@ var Navigation = React.createClass({
           <li> <Link className="Link" to="about" activeClassName="active">
             <span>About</span>
           </Link> </li>
+
+            <li className="icon">
+              <a onClick={this.toggleDropdown}>&#9776;</a>
+            </li>
 
         </ul>
       </div>

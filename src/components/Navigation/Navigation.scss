@@ -1,111 +1,145 @@
 @import '../../variables.scss';
 
 .Nav-Header {
-  color: $faded-blue-color;
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  margin: 15px 0 4px 0;
+   color: $faded-blue-color;
+   text-align: center;
+   font-size: 40px;
+   letter-spacing: 0.5px;
+   font-weight: 400;
+   margin: 15px 0 4px 0;
 }
 
 .Link-Div {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 0 10px 0;
+   margin: 0 auto;
+   text-align: center;
+   padding: 0 0 10px 0;
 }
 
 .Link {
-  color: $teal-color;
-  margin: 0 17px;
-  font-size: 17px;
-  text-decoration: none;
-  font-weight: 400;
+   color: $teal-color;
+   margin: 0 17px;
+   font-size: 19px;
+   text-decoration: none;
+   font-weight: 300;
 }
 
 .Link:hover {
-  color: $button-hover-teal;
+   color: $button-hover-teal;
 }
 
 .Link.active {
-  color: $faded-blue-color;
+   color: $faded-blue-color;
 }
 
 .hr-Div {
-  margin: 0 auto;
-  width: 700px;
+   margin: 0 auto;
+   width: 700px;
+   clear: left;
 }
 
 hr {
-  background: $faded-blue-color;
-  align: center;
-  border: none;
-  height: 1px;
+   background: $faded-blue-color;
+   align: center;
+   border: none;
+   height: 1px;
 }
 
-ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
+/* Remove margins and padding from the list, and add a black background color */
+ul.ul-Nav {
+   list-style-type: none;
+   margin-bottom: 0;
+   margin-top: 5px;
+   padding-left: 0px;
 }
 
-li {
-  display:inline-block;
+/* Style the links inside the list items */
+ul.ul-Nav li a {
+   text-decoration: none;
 }
 
-.show-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #fff;
-  background: #19c589;
-  text-align: center;
-  padding: 10px 0;
-  display: none;
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.ul-Nav li.icon {
+   display: none;
 }
 
-/*Hide checkbox*/
-input[type=checkbox]{
-  display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-  display: block;
+ul.ul-Nav li {
+   display: inline;
 }
 
 @media (min-width: $screen-sm-min) {
-  .hr-Div {
-    width: 700px;
-  }
+   .hr-Div {
+      width: 700px;
+   }
 }
 
 @media (max-width: $screen-sm-min) and (min-width: $screen-xs-min){
-  .hr-Div {
-    padding: 0 8%;
-    width: auto;
-  }
+   .hr-Div {
+      padding: 0 8%;
+      width: auto;
+   }
 }
 
 @media (max-width: $screen-xs-min) {
-  .hr-Div {
-    width: 40px;
-  }
+   .hr-Div {
+      margin: 0 auto;
+      width: 85%;
+   }
 
+   hr {
+      width: 100%;
+   }
 
-  .Nav-Header {
-    font-size: 9vw;
-  }
+   .Nav-Header {
+      font-size: 9vw;
+   }
 
-  .show-menu {
-    display:block;
-  }
+   ul.ul-Nav {
+      padding: 0 40px;
+   }
 
-  #menu {
-    display: none;
-  }
-  /*Create vertical spacing*/
-  li {
-   display: block;
-  }
+   ul.ul-Nav li {
+      float: left;
+   }
+
+   ul.ul-Nav li a {
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+      font-size: 17px;
+   }
+
+   ul.ul-Nav li a:not(.active) {
+      display: none;
+   }
+
+   ul.ul-Nav li.icon {
+      float: right;
+      display: inline-block;
+      margin-bottom: 10px;
+   }
+
+   ul.ul-Nav li.icon a {
+      float: right;
+      display: inline-block;
+   }
+
+   ul.ul-Nav.responsive {
+      position: relative;
+   }
+
+   ul.ul-Nav.responsive li.icon {
+      position: absolute;
+      right: 40px;
+      top: 0;
+      margin-bottom: 0px;
+   }
+   ul.ul-Nav.responsive li {
+      float: none;
+      display: inline;
+   }
+   ul.ul-Nav.responsive li a {
+      display: block;
+      text-align: left;
+   }
 }
 
