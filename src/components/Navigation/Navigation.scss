@@ -77,6 +77,10 @@ ul.ul-Nav li {
       padding: 0 8%;
       width: auto;
    }
+
+   ul.ul-Nav li a {
+      font-size: 18px;
+   }
 }
 
 @media (max-width: $screen-xs-min) {
