@@ -1,45 +1,149 @@
 @import '../../variables.scss';
 
 .Nav-Header {
-  color: $faded-blue-color;
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  margin: 15px 0 4px 0;
+   color: $faded-blue-color;
+   text-align: center;
+   font-size: 40px;
+   letter-spacing: 0.5px;
+   font-weight: 400;
+   margin: 15px 0 4px 0;
 }
 
 .Link-Div {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 0 10px 0;
+   margin: 0 auto;
+   text-align: center;
+   padding: 0 0 10px 0;
 }
 
 .Link {
-  color: $teal-color;
-  margin: 0 17px;
-  font-size: 17px;
-  text-decoration: none;
-  font-weight: 400;
+   color: $teal-color;
+   margin: 0 17px;
+   font-size: 19px;
+   text-decoration: none;
+   font-weight: 300;
 }
 
 .Link:hover {
-  color: $button-hover-teal;
+   color: $button-hover-teal;
 }
 
 .Link.active {
-  color: $faded-blue-color;
+   color: $faded-blue-color;
 }
 
 .hr-Div {
-  //margin: 0 auto;
-  //width: 60%;
+   margin: 0 auto;
+   width: 700px;
+   clear: left;
 }
 
 hr {
-  background: $faded-blue-color;
-  align: center;
-  width: 55%;
-  border: none;
-  height: 1px;
+   background: $faded-blue-color;
+   align: center;
+   border: none;
+   height: 1px;
 }
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.ul-Nav {
+   list-style-type: none;
+   margin-bottom: 0;
+   margin-top: 5px;
+   padding-left: 0px;
+}
+
+/* Style the links inside the list items */
+ul.ul-Nav li a {
+   text-decoration: none;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.ul-Nav li.icon {
+   display: none;
+}
+
+ul.ul-Nav li {
+   display: inline;
+}
+
+@media (min-width: $screen-sm-min) {
+   .hr-Div {
+      width: 700px;
+   }
+}
+
+@media (max-width: $screen-sm-min) and (min-width: $screen-xs-min){
+   .hr-Div {
+      padding: 0 8%;
+      width: auto;
+   }
+
+   ul.ul-Nav li a {
+      font-size: 18px;
+   }
+}
+
+@media (max-width: $screen-xs-min) {
+   .hr-Div {
+      margin: 0 auto;
+      width: 85%;
+   }
+
+   hr {
+      width: 100%;
+   }
+
+   .Nav-Header {
+      font-size: 9vw;
+   }
+
+   ul.ul-Nav {
+      padding: 0 40px;
+   }
+
+   ul.ul-Nav li {
+      float: left;
+   }
+
+   ul.ul-Nav li a {
+      text-align: left;
+      padding: 0px;
+      margin: 0px;
+      font-size: 17px;
+   }
+
+   ul.ul-Nav li a:not(.active) {
+      display: none;
+   }
+
+   ul.ul-Nav li.icon {
+      float: right;
+      display: inline-block;
+      margin-bottom: 10px;
+   }
+
+   ul.ul-Nav li.icon a {
+      float: right;
+      display: inline-block;
+   }
+
+   ul.ul-Nav.responsive {
+      position: relative;
+   }
+
+   ul.ul-Nav.responsive li.icon {
+      position: absolute;
+      right: 40px;
+      top: 0;
+      margin-bottom: 0px;
+   }
+   ul.ul-Nav.responsive li {
+      float: none;
+      display: inline;
+   }
+   ul.ul-Nav.responsive li a {
+      display: block;
+      text-align: left;
+   }
+}
+
