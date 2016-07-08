@@ -1,11 +1,8 @@
-//import React from 'react';
-//import Button from '../Button';
-
 var React = require('react');
 import Button from '../Button';
 
-require("./Landing.scss");
-var BackgroundImage = require("../../../photographs/FushimiInariLight.jpg");
+//require("./Landing.scss");
+//var BackgroundImage = require("../../../photographs/FushimiInariLight.jpg");
 
 var styles = {
   html: {
@@ -16,7 +13,7 @@ var styles = {
     overflow: 'hidden',
     WebkitTextSizeAdjust: 100,
     color: 'white',
-    backgroundImage: 'url('+ BackgroundImage +')',
+   // backgroundImage: 'url('+ BackgroundImage +')',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: "center center",
 
@@ -39,22 +36,22 @@ var styles = {
 };
 
 var Landing = React.createClass({
-    componentWillMount: function(){
-      for(var i in styles.html) {
-        document.documentElement.style[i] = styles.html[i];
-      };
-      for(var i in styles.body){
-        document.body.style[i] = styles.body[i];
-      };
-    },
-    componentWillUnmount: function(){
-      for(var i in styles.html) {
-        document.documentElement.style[i] = null;
-      };
-      for(var i in styles.body){
-        document.body.style[i] = null;
-      };
-    },
+    // componentWillMount: function(){
+    //   for(var i in styles.html) {
+    //     document.documentElement.style[i] = styles.html[i];
+    //   };
+    //   for(var i in styles.body){
+    //     document.body.style[i] = styles.body[i];
+    //   };
+    // },
+    // componentWillUnmount: function(){
+    //   for(var i in styles.html) {
+    //     document.documentElement.style[i] = null;
+    //   };
+    //   for(var i in styles.body){
+    //     document.body.style[i] = null;
+    //   };
+    // },
   render: function() {
       return <div className="Landing-Content">
         <h1 className="Landing-Header">Sara Frederixon</h1>

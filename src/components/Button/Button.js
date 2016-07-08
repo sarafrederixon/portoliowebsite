@@ -3,7 +3,7 @@ var React = require('react');
 var Router = require('react-router');
 var Link = Router.Link;
 
-require("./Button.scss");
+//require("./Button.scss");
 
 var Button = React.createClass({
   render: function() {
