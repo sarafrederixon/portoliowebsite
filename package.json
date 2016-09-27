@@ -23,6 +23,7 @@
     "clean-webpack-plugin": "^0.1.8",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^0.8.5",
     "img-loader": "^1.2.2",
     "node-sass": "^3.4.2",

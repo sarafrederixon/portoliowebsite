@@ -4,6 +4,7 @@ var path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const merge = require('webpack-merge');
 
@@ -50,7 +51,8 @@ var config = {
     inject: 'body', // Inject all scripts into the body
     chunks: ['app']
 
-  })
+  }),
+  new FaviconsWebpackPlugin('./icon.png')
 ]
 };
 
